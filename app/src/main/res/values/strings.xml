@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ChallengeTeco</string>
+    <string name="title_main">Rick y Morty API</string>
+    <string name="welcome">This is my Challenge</string>
+    <string name="character">Hi!</string>
+    <string name="name_character">Name Character</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="character_name">Name of character</string>
+    <string name="charcater_status">Status:</string>
+    <string name="charcater_gender">Gender:</string>
+    <string name="charcater_species">Species:</string>
+    <string name="character_origin">Origin:</string>
+    <string name="edit_button">Edit button</string>
+</resources>
