@@ -13,13 +13,20 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="520acdfd-7887-448b-9fad-21303c743320" name="Changes" comment="added vcs" />
+    <list default="true" id="520acdfd-7887-448b-9fad-21303c743320" name="Changes" comment="init commit added challenge android flow">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/sebapp/challengeteco/data/network/CharacterPagingSource.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/sebapp/challengeteco/data/network/CharacterPagingSource.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/sebapp/challengeteco/data/repository/CharacterRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/sebapp/challengeteco/data/repository/CharacterRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/sebapp/challengeteco/data/services/ApiService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/sebapp/challengeteco/data/services/ApiService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/sebapp/challengeteco/domain/character/CharacterListImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/sebapp/challengeteco/domain/character/CharacterListImpl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/sebapp/challengeteco/domain/character/CharacterListUseCase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/sebapp/challengeteco/domain/character/CharacterListUseCase.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\u633158\.android\avd\Pixel_3a_API_30.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[R5CT3366WRY]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -63,6 +70,9 @@
         <option value="valueResourceFile" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="KotlinMultiplatform">
     <allAvailableExecutables />
@@ -349,7 +359,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674164704094</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="init commit added challenge android flow">
+      <created>1674165050929</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1674165050929</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -373,6 +390,7 @@
     <MESSAGE value="item selector" />
     <MESSAGE value="clean files" />
     <MESSAGE value="added vcs" />
-    <option name="LAST_COMMIT_MESSAGE" value="added vcs" />
+    <MESSAGE value="init commit added challenge android flow" />
+    <option name="LAST_COMMIT_MESSAGE" value="init commit added challenge android flow" />
   </component>
 </project>

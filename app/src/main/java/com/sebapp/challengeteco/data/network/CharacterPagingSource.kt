@@ -9,7 +9,6 @@ import com.sebapp.challengeteco.domain.character.CharacterListUseCase
 
 class CharacterPagingSource(
     private val characterListUseCase: CharacterListUseCase
-//    private val apiService: ApiService
 ) : PagingSource<Int, CharacterData>() {
 
     override fun getRefreshKey(state: PagingState<Int, CharacterData>): Int? {
@@ -23,20 +22,23 @@ class CharacterPagingSource(
             var prevPageNumber: Int? = null
             var dataResult: RickAndMortyList? = null
 
-            characterListUseCase.getListCharacter(nextPage) { response ->
+            characterListUseCase.getListCharacter(nextPage) { result ->
+                if (result.isSuccessful) {
+                    result.body()?.let { listCharcater ->
+                        if (listCharcater.info.next != null) {
+                            val uri = Uri.parse(listCharcater.info.next)
+                            val nextPageQuery = uri.getQueryParameter("page")
+                            nextPageNumber = nextPageQuery?.toInt()
+                        }
 
-                if (response.info.next != null) {
-                    val uri = Uri.parse(response.info.next)
-                    val nextPageQuery = uri.getQueryParameter("page")
-                    nextPageNumber = nextPageQuery?.toInt()
+                        if (listCharcater.info.prev != null) {
+                            val uri = Uri.parse(listCharcater.info.prev)
+                            val prevPageQuery = uri.getQueryParameter("page")
+                            prevPageNumber = prevPageQuery?.toInt()
+                        }
+                        dataResult = listCharcater
+                    }
                 }
-
-                if (response.info.prev != null) {
-                    val uri = Uri.parse(response.info.prev)
-                    val prevPageQuery = uri.getQueryParameter("page")
-                    prevPageNumber = prevPageQuery?.toInt()
-                }
-                dataResult = response
             }
             LoadResult.Page(data = dataResult?.results ?: emptyList(),
                 prevKey = prevPageNumber,
