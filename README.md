@@ -2,20 +2,14 @@
 ## Interview Android flow
 ### I use the next technologies
 
-Kotlin
+- Kotlin
+- MVVM Aquitecture
+- Clean
+- Coroutines
+- Pattern Master-Detail
+- Paging
+- Navigation
+- Retrofit
+- Ktlint
 
-MVVM Aquitecture
-
-Clean
-
-Coroutines
-
-Pattern Master-Detail
-
-Paging
-
-Navigation
-
-Retrofit
-
-Ktlint
+![App Screenshot](https://github.com/SebaAppTeco/Android-interview/tree/master/app/screen_api_rm.png)
