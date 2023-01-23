@@ -12,4 +12,4 @@
 - Retrofit
 - Ktlint
 
-![App Screenshot](https://github.com/SebaAppTeco/Android-interview/tree/master/app/screen_api_rm.png)
+![App Screenshot](https://github.com/SebaAppTeco/Android-interview/blob/master/app/assets/screen_api_rm.png)
