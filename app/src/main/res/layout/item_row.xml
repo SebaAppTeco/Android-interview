@@ -11,7 +11,7 @@
         android:id="@+id/textView_Name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="16dp"
         android:layout_marginBottom="16dp"
         android:textColor="@color/text_primary"
         android:textSize="16sp"
@@ -36,6 +36,7 @@
         android:id="@+id/imageView_Card"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
         app:cardCornerRadius="40dp"
         app:cardElevation="0dp"
         app:layout_constraintHorizontal_bias="0.5"
@@ -44,8 +45,8 @@
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/imageView"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
             android:src="@drawable/charcater_found_image"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -56,12 +57,11 @@
     <ImageView
         android:id="@+id/btn_options"
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginVertical="@dimen/ten"
         android:layout_marginEnd="@dimen/common_padding_margin"
         android:contentDescription="@string/edit_button"
-        android:rotation="90"
-        android:src="@drawable/ic_edit"
+        android:src="@drawable/ic_navigate_next"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

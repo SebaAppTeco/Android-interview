@@ -24,26 +24,25 @@ class CharacterPagingSource(
 
             characterListUseCase.getListCharacter(nextPage) { result ->
                 if (result.isSuccessful) {
-                    result.body()?.let { listCharcater ->
-                        if (listCharcater.info.next != null) {
-                            val uri = Uri.parse(listCharcater.info.next)
+                    result.body()?.let { listCharacter ->
+                        if (listCharacter.info.next != null) {
+                            val uri = Uri.parse(listCharacter.info.next)
                             val nextPageQuery = uri.getQueryParameter("page")
                             nextPageNumber = nextPageQuery?.toInt()
                         }
 
-                        if (listCharcater.info.prev != null) {
-                            val uri = Uri.parse(listCharcater.info.prev)
+                        if (listCharacter.info.prev != null) {
+                            val uri = Uri.parse(listCharacter.info.prev)
                             val prevPageQuery = uri.getQueryParameter("page")
                             prevPageNumber = prevPageQuery?.toInt()
                         }
-                        dataResult = listCharcater
+                        dataResult = listCharacter
                     }
                 }
             }
             LoadResult.Page(data = dataResult?.results ?: emptyList(),
                 prevKey = prevPageNumber,
                 nextKey = nextPageNumber)
-//            val response = apiService.getListCharacter(nextPage)
         } catch (e: Exception) {
             LoadResult.Error(e)
         }
