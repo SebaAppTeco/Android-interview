@@ -13,7 +13,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="520acdfd-7887-448b-9fad-21303c743320" name="Changes" comment="update readme file" />
+    <list default="true" id="520acdfd-7887-448b-9fad-21303c743320" name="Changes" comment="update readme file fix path">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -391,7 +393,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674473702259</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="update readme file fix path">
+      <created>1674473793140</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1674473793140</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -420,6 +429,7 @@
     <MESSAGE value="rebuild project and icon added" />
     <MESSAGE value="finish repo" />
     <MESSAGE value="update readme file" />
-    <option name="LAST_COMMIT_MESSAGE" value="update readme file" />
+    <MESSAGE value="update readme file fix path" />
+    <option name="LAST_COMMIT_MESSAGE" value="update readme file fix path" />
   </component>
 </project>
