@@ -10,6 +10,7 @@ import com.sebapp.challengeteco.data.model.CharacterData
 import com.sebapp.challengeteco.data.network.CharacterPagingSource
 import com.sebapp.challengeteco.domain.character.CharacterListUseCase
 import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.flow
 
 class CharacterViewModel(
     private val characterListUseCase: CharacterListUseCase
@@ -17,8 +18,8 @@ class CharacterViewModel(
 
     fun getListData(): Flow<PagingData<CharacterData>> {
         return Pager(config = PagingConfig(pageSize = 20, maxSize = 200),
-            pagingSourceFactory = { CharacterPagingSource(characterListUseCase) }).flow.cachedIn(
-            viewModelScope
-        )
+            pagingSourceFactory = {
+                CharacterPagingSource(characterListUseCase)
+            }).flow.cachedIn(viewModelScope)
     }
 }

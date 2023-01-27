@@ -16,7 +16,6 @@ import com.sebapp.challengeteco.databinding.ItemRowBinding
 class RecyclerViewAdapter() : PagingDataAdapter<CharacterData, RecyclerViewAdapter.MyViewHolder>(
     DiffUtilCallBack()
 ) {
-
     private lateinit var context: Context
     private var onItemClickListener: ((CharacterData) -> Unit)? = null
 
@@ -41,7 +40,7 @@ class RecyclerViewAdapter() : PagingDataAdapter<CharacterData, RecyclerViewAdapt
         private var currentItem: CharacterData? = null
 
         init {
-            binding.btnOptions.setOnClickListener {
+            binding.itemList.setOnClickListener {
                 currentItem?.let { item ->
                     onItemClickListener?.let {
                         it(item)
@@ -67,6 +66,7 @@ class RecyclerViewAdapter() : PagingDataAdapter<CharacterData, RecyclerViewAdapt
         override fun areItemsTheSame(oldItem: CharacterData, newItem: CharacterData): Boolean {
             return oldItem.name == newItem.name
         }
+
         override fun areContentsTheSame(oldItem: CharacterData, newItem: CharacterData): Boolean {
             return oldItem.name == newItem.name &&
                     oldItem.species == newItem.species

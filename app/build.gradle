@@ -7,12 +7,12 @@ plugins {
 }
 
 android {
-    compileSdk 31
+    compileSdk 32
 
     defaultConfig {
         applicationId "com.sebapp.challengeteco"
         minSdk 23
-        targetSdk 31
+        targetSdk 32
         versionCode 1
         versionName "1.0"
 
@@ -39,8 +39,13 @@ android {
 
 dependencies {
 
-    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'io.insert-koin:koin-android:3.3.2'
+    implementation ("com.squareup.retrofit2:retrofit:2.9.0"){
+        exclude module: 'okhttp'
+    }
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.okhttp3:okhttp:5.0.0-alpha.9'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.10.0'
     implementation 'com.github.bumptech.glide:glide:4.13.2'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.13.2'
 

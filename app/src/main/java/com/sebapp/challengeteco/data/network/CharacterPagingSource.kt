@@ -4,7 +4,7 @@ import android.net.Uri
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
 import com.sebapp.challengeteco.data.model.CharacterData
-import com.sebapp.challengeteco.data.model.RickAndMortyList
+import com.sebapp.challengeteco.data.model.Resource
 import com.sebapp.challengeteco.domain.character.CharacterListUseCase
 
 class CharacterPagingSource(
@@ -20,11 +20,11 @@ class CharacterPagingSource(
             val nextPage: Int = params.key ?: FIRST_PAGE_INDEX
             var nextPageNumber: Int? = null
             var prevPageNumber: Int? = null
-            var dataResult: RickAndMortyList? = null
 
-            characterListUseCase.getListCharacter(nextPage) { result ->
-                if (result.isSuccessful) {
-                    result.body()?.let { listCharacter ->
+            val response = characterListUseCase.getListCharacter(nextPage)
+            when (response.status) {
+                Resource.Status.SUCCESS -> {
+                    response.data?.let { listCharacter ->
                         if (listCharacter.info.next != null) {
                             val uri = Uri.parse(listCharacter.info.next)
                             val nextPageQuery = uri.getQueryParameter("page")
@@ -36,17 +36,20 @@ class CharacterPagingSource(
                             val prevPageQuery = uri.getQueryParameter("page")
                             prevPageNumber = prevPageQuery?.toInt()
                         }
-                        dataResult = listCharacter
                     }
                 }
+                Resource.Status.ERROR, Resource.Status.LOADING -> {}
             }
-            LoadResult.Page(data = dataResult?.results ?: emptyList(),
+            LoadResult.Page(
+                data = response.data?.results ?: emptyList(),
                 prevKey = prevPageNumber,
-                nextKey = nextPageNumber)
+                nextKey = nextPageNumber
+            )
         } catch (e: Exception) {
             LoadResult.Error(e)
         }
     }
+
     companion object {
         private const val FIRST_PAGE_INDEX = 1
     }

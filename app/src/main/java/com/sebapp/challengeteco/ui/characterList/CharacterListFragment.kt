@@ -5,14 +5,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.sebapp.challengeteco.databinding.FragmentCharacterListBinding
-import com.sebapp.challengeteco.domain.character.CharacterListImpl
-// import kotlinx.android.synthetic.main.fragment_character_list.*
-import kotlinx.coroutines.flow.collectLatest
+import org.koin.androidx.viewmodel.ext.android.getViewModel
 
 class CharacterListFragment : Fragment() {
 
@@ -47,14 +44,25 @@ class CharacterListFragment : Fragment() {
     }
 
     private fun initViewModel() {
-        val viewModel = ViewModelProvider(
-            requireActivity(),
-            CharacterListViewModelFactory(CharacterListImpl())
-        )[CharacterViewModel::class.java]
-
+        val viewModel = getViewModel<CharacterViewModel>()
         lifecycleScope.launchWhenCreated {
-            viewModel.getListData().collectLatest { character ->
+            viewModel.getListData().collect { character ->
                 recyclerViewAdapter.submitData(character)
+                /*when (character) {
+                    Status.SUCCESS -> {
+                        binding.progressBar.visibility = View.GONE
+                    }
+                    Status.ERROR -> {
+                        Toast.makeText(
+                            requireContext(),
+                            getString(R.string.message_error_api),
+                            Toast.LENGTH_SHORT
+                        ).show()
+                    }
+                    Status.LOADING -> {
+                        binding.progressBar.visibility = View.VISIBLE
+                    }
+                }*/
             }
         }
     }
