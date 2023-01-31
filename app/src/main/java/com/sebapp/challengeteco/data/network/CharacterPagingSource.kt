@@ -5,7 +5,7 @@ import androidx.paging.PagingSource
 import androidx.paging.PagingState
 import com.sebapp.challengeteco.data.model.CharacterData
 import com.sebapp.challengeteco.data.model.Resource
-import com.sebapp.challengeteco.domain.character.CharacterListUseCase
+import com.sebapp.challengeteco.usecase.CharacterListUseCase
 
 class CharacterPagingSource(
     private val characterListUseCase: CharacterListUseCase

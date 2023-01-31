@@ -6,30 +6,17 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="seba" />
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="debug" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="520acdfd-7887-448b-9fad-21303c743320" name="Changes" comment="upgrade gitignore">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_1_5_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_resources_1_5_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_common_java8_2_5_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_process_2_4_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_startup_startup_runtime_1_1_1_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_insert_koin_koin_android_3_3_2_aar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__io_insert_koin_koin_core_jvm_3_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_1_7_21.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_common_1_7_21.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jdk7_1_7_21.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jdk8_1_7_21.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sebapp/challengeteco/AppModule.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sebapp/challengeteco/MyApplication.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sebapp/challengeteco/data/model/Resource.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/sebapp/challengeteco/data/repository/CharacterRepositoryImpl.kt" afterDir="false" />
+    <list default="true" id="520acdfd-7887-448b-9fad-21303c743320" name="Changes" comment="add dependencies okhhttp">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlinx_kotlinx_coroutines_android_1_6_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlinx_kotlinx_coroutines_core_jvm_1_6_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlinx_kotlinx_coroutines_test_jvm_1_6_4.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/checksums/md5-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.3.3/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.3.3/checksums/sha1-checksums.bin" afterDir="false" />
@@ -41,44 +28,40 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_1_4_2_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_resources_1_4_2_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_ktx_1_7_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_ktx_1_8_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_process_2_4_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_startup_startup_runtime_1_0_0_aar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okhttp3_okhttp_3_14_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_squareup_okio_okio_1_17_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_1_7_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_common_1_7_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jdk7_1_7_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jdk8_1_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlinx_kotlinx_coroutines_android_1_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlinx_kotlinx_coroutines_core_jvm_1_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlinx_kotlinx_coroutines_test_jvm_1_6_1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/app/ChallengeTeco.app.androidTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/ChallengeTeco.app.androidTest.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/app/ChallengeTeco.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/ChallengeTeco.app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/app/ChallengeTeco.app.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/ChallengeTeco.app.main.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/app/ChallengeTeco.app.unitTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/ChallengeTeco.app.unitTest.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/sebapp/challengeteco/AppModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/sebapp/challengeteco/framework/di/AppModule.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/sebapp/challengeteco/MyApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/sebapp/challengeteco/framework/MyApplication.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/sebapp/challengeteco/common/Constants.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/sebapp/challengeteco/framework/common/Constants.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/sebapp/challengeteco/common/CoolImageView.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/sebapp/challengeteco/framework/common/CoolImageView.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/sebapp/challengeteco/data/network/CharacterPagingSource.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/sebapp/challengeteco/data/network/CharacterPagingSource.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/sebapp/challengeteco/data/network/RetroInstance.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/sebapp/challengeteco/data/repository/CharacterRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/sebapp/challengeteco/data/repository/CharacterRepository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/sebapp/challengeteco/data/services/ApiService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/sebapp/challengeteco/data/services/ApiService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/sebapp/challengeteco/domain/character/CharacterListImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/sebapp/challengeteco/domain/character/CharacterListUseCaseImpl.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/sebapp/challengeteco/domain/character/CharacterListUseCase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/sebapp/challengeteco/domain/character/CharacterListUseCase.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/sebapp/challengeteco/ui/characterList/CharacterListFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/sebapp/challengeteco/ui/characterList/CharacterListFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/sebapp/challengeteco/ui/characterList/CharacterListViewModelFactory.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/sebapp/challengeteco/ui/characterList/CharacterViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/sebapp/challengeteco/ui/characterList/CharacterViewModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/sebapp/challengeteco/ui/characterList/RecyclerViewAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/sebapp/challengeteco/ui/characterList/RecyclerViewAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/sebapp/challengeteco/data/repository/CharacterRepository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/sebapp/challengeteco/repository/CharacterRepository.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/sebapp/challengeteco/data/repository/CharacterRepositoryImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/sebapp/challengeteco/repository/CharacterRepositoryImpl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/sebapp/challengeteco/domain/character/CharacterListUseCase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/sebapp/challengeteco/usecase/CharacterListUseCase.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/sebapp/challengeteco/domain/character/CharacterListUseCaseImpl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/sebapp/challengeteco/usecase/CharacterListUseCaseImpl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/sebapp/challengeteco/ui/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/sebapp/challengeteco/presentation/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/sebapp/challengeteco/ui/characterDetail/DetailFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/sebapp/challengeteco/presentation/characterDetail/DetailFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/sebapp/challengeteco/ui/characterList/CharacterListFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/sebapp/challengeteco/presentation/characterList/CharacterListFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/sebapp/challengeteco/ui/characterList/CharacterViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/sebapp/challengeteco/presentation/characterList/CharacterViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/sebapp/challengeteco/ui/characterList/RecyclerViewAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/sebapp/challengeteco/presentation/characterList/RecyclerViewAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_character_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_character_list.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_row.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_row.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_detail.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_detail.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/navigation/nav_graph.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/navigation/nav_graph.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/sebapp/challengeteco/ui/principal/MainActivityTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/sebapp/challengeteco/presentation/MainActivityTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\u633158\.android\avd\Pixel_3a_API_29.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -173,13 +156,15 @@
       <recent name="C:\AndroidRepos\AndroidFlowChallenge\app\src\main\res\drawable-v24" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\AndroidRepos\AndroidFlowChallenge\app\src\main\java\com\sebapp\challengeteco\framework" />
       <recent name="C:\AndroidRepos\AndroidFlowChallenge\app\assets" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.sebapp.challengeteco.framework" />
+      <recent name="com.sebapp.challengeteco.presentation" />
+      <recent name="com.sebapp.challengeteco.usecase" />
       <recent name="com.sebapp.challengeteco.domain.character" />
       <recent name="com.sebapp.challengeteco.domain" />
-      <recent name="com.sebapp.challengeteco.ui.list" />
-      <recent name="com.sebapp.challengeteco.ui" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -188,7 +173,7 @@
       <command value="gradle ktlintFormat" />
     </option>
   </component>
-  <component name="RunManager" selected="Android App.app">
+  <component name="RunManager" selected="Gradle.AndroidFlowChallenge [ktlintCheck]">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="ChallengeTeco.app.main" />
       <option name="DEPLOY" value="true" />
@@ -483,7 +468,21 @@
       <option name="project" value="LOCAL" />
       <updated>1674573748994</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="add coroutines, flows, and mapp errors, ktlint check added">
+      <created>1674847560359</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1674847560359</updated>
+    </task>
+    <task id="LOCAL-00016" summary="add dependencies okhhttp">
+      <created>1674847612501</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1674847612501</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -515,6 +514,8 @@
     <MESSAGE value="update readme file fix path" />
     <MESSAGE value="upgrade workspace" />
     <MESSAGE value="upgrade gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="upgrade gitignore" />
+    <MESSAGE value="add coroutines, flows, and mapp errors, ktlint check added" />
+    <MESSAGE value="add dependencies okhhttp" />
+    <option name="LAST_COMMIT_MESSAGE" value="add dependencies okhhttp" />
   </component>
 </project>
